@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feltech Hub Computers</title>
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="./Nav.css">
+    <link rel="stylesheet" href="./hero.css">
+</head>
+<body>
+    <section>
+        <header id="gc-topbar">
+        <div class="gc-container">
+
+            <!-- Logo -->
+            <div class="gc-logo-area">
+                <span class="gc-logo-text">Feltech Hub Computers</span>
+            </div>
+
+            <!-- Search -->
+            <div class="gc-search-area">
+                <select id="gc-category-select">
+                    <option>All Collection</option>
+                    <option>Laptops</option>
+                    <option>Desktops</option>
+                    <option>Accessories</option>
+                    <option>Monitors</option>
+                    <option>Printers</option>
+                </select>
+
+                <input 
+                    type="text" 
+                    id="gc-search-input" 
+                    placeholder="Search our product"
+                >
+
+                <button id="gc-search-btn">
+                    🔍 SEARCH
+                </button>
+            </div>
+
+            <!-- Right Info -->
+            <div class="gc-right-area">
+
+                <div class="gc-support">
+                    <span class="gc-icon">🎧</span>
+                    <div>
+                        <strong class="rdc">0115888327</strong> <br>
+                        <small>Call Us Now</small>
+                    </div>
+                </div>
+
+                <div class="gc-account">
+                    <span class="gc-icon">👤</span>
+                    <div>
+                        <strong class="rdc">MY ACCOUNT</strong> <br>
+                        <small>Login / Create Account</small>
+                    </div>
+                </div>
+
+                <div class="gc-cart">
+                    <span class="gc-icon">🛒</span>
+                    <div class="rdc">
+                        <strong>CHECKOUT</strong>
+                        <small class="gc-cart-amount">KSh0.00</small>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        </header>
+    </section>
+    <section>
+        <nav id="gc-main-nav">
+            <div class="gc-nav-container">
+
+                <!-- LEFT: HAMBURGER -->
+                <div class="gc-left-hamburger" id="gc-hamburger-btn">
+                    ☰ <span class="gc-hamburger-text">SHOP CATEGORIES</span>
+                </div>
+
+                <!-- CENTER LINKS -->
+                <ul class="gc-nav-links">
+                    <li><a href="#" class="gc-nav-active">Home</a></li>
+                    <li><a href="#">Laptops</a></li>
+                    <li><a href="#">Monitors</a></li>
+                    <li><a href="#">Desktop & Towers</a></li>
+                    <li><a href="#">Accessories</a></li>
+
+                    <!-- MORE DROPDOWN -->
+                    <li class="gc-more-wrapper">
+                        <button id="gc-more-btn">More ▾</button>
+
+                        <div class="gc-more-dropdown" id="gc-more-dropdown">
+                            <a href="#">Value of the Day</a>
+                            <a href="#">New Arrivals</a>
+                            <a href="#">Best Sellers</a>
+                            <a href="#">Offers</a>
+                        </div>
+                    </li>
+                </ul>
+
+                <!-- RIGHT -->
+                <div class="gc-nav-wishlist">❤</div>
+            </div>
+
+            <!-- HAMBURGER DROPDOWN -->
+            <div class="gc-hamburger-dropdown" id="gc-hamburger-dropdown">
+                <a href="#">All Products</a>
+                <a href="#">Shop</a>
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Laptop</a>
+
+                <hr>
+
+                <a href="#"><strong>Value of the Day</strong></a>
+                <a href="#"><strong>New Arrivals</strong></a>
+
+                <button class="gc-less-btn" id="gc-close-hamburger">… Less</button>
+            </div>
+        </nav>
+
+
+    </section>
+    <section id="gc-hero-slider">
+
+        <div class="gc-slide gc-slide-active">
+        <div class="gc-slide-content" style="color:#f07039 ;">
+            <h1>Best Deals on Laptops & Accessories</h1>
+            <p>Upgrade your tech with unbeatable prices today</p>
+            <a href="#" class="gc-slide-btn">Shop Now</a>
+        </div>
+        <img src="./Assets/Hero1.png" alt="Laptop Deals">
+        </div>
+
+        <div class="gc-slide">
+        <div class="gc-slide-content">
+            <h1>Powerful Desktops for Work & Gaming</h1>
+            <p>Performance you can trust at Galway Computers</p>
+            <a href="#" class="gc-slide-btn">Explore More</a>
+        </div>
+        <img src="./Assets/Hero2.png" alt="Desktop PCs">
+        </div>
+
+        <div class="gc-slide">
+        <div class="gc-slide-content">
+            <h1>Upgrade to Stunning Displays</h1>
+            <p>Crystal-clear monitors for work & entertainment</p>
+            <a href="#" class="gc-slide-btn">View Monitors</a>
+        </div>
+        <img src="/Assets/Hero3.png" alt="Monitors">
+        </div>
+
+        <div class="gc-slide">
+        <div class="gc-slide-content">
+            <h1>Latest Tech Accessories</h1>
+            <p>Keyboards, mice, headsets & more</p>
+            <a href="#" class="gc-slide-btn">See Offers</a>
+        </div>
+        <img src="./Assets/Hero4.png" alt="Accessories">
+        </div>
+
+    </section>
+
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+</body>
+<script>
+document.getElementById("gc-search-btn").addEventListener("click", () => {
+    const searchValue = document.getElementById("gc-search-input").value;
+    alert("Searching for: " + searchValue);
+});
+</script>
+
+<script>
+const hamburgerBtn = document.getElementById("gc-hamburger-btn");
+const hamburgerMenu = document.getElementById("gc-hamburger-dropdown");
+const closeHamburger = document.getElementById("gc-close-hamburger");
+
+const moreBtn = document.getElementById("gc-more-btn");
+const moreDropdown = document.getElementById("gc-more-dropdown");
+
+/* Hamburger Toggle */
+hamburgerBtn.addEventListener("click", () => {
+    hamburgerMenu.style.display =
+        hamburgerMenu.style.display === "flex" ? "none" : "flex";
+});
+
+/* Close Button */
+closeHamburger.addEventListener("click", () => {
+    hamburgerMenu.style.display = "none";
+});
+
+/* More Dropdown */
+moreBtn.addEventListener("click", () => {
+    moreDropdown.style.display =
+        moreDropdown.style.display === "flex" ? "none" : "flex";
+});
+
+/* Click outside to close */
+document.addEventListener("click", (e) => {
+    if (!hamburgerMenu.contains(e.target) && !hamburgerBtn.contains(e.target)) {
+        hamburgerMenu.style.display = "none";
+    }
+
+    if (!moreDropdown.contains(e.target) && !moreBtn.contains(e.target)) {
+        moreDropdown.style.display = "none";
+    }
+});
+</script>
+<script>
+let slides = document.querySelectorAll(".gc-slide");
+let currentSlide = 0;
+
+setInterval(() => {
+    slides[currentSlide].classList.remove("gc-slide-active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("gc-slide-active");
+}, 6000);
+</script>
+
+
+
+
+
+</html>
