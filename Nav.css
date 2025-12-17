@@ -1,0 +1,133 @@
+/* NAV BAR */
+#gc-main-nav {
+    background-color: #ff4d00;
+    position: relative;
+}
+
+.gc-nav-container {
+    width: 95%;
+    max-width: 1400px;
+    margin: auto;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LEFT HAMBURGER */
+.gc-left-hamburger {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.gc-hamburger-text {
+    font-size: 14px;
+}
+
+/* LINKS */
+.gc-nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.gc-nav-links a,
+#gc-more-btn {
+    color: #fff;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.gc-nav-active {
+    font-weight: bold;
+}
+
+/* MORE DROPDOWN */
+.gc-more-wrapper {
+    position: relative;
+}
+
+.gc-more-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: #fff;
+    min-width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    padding: 10px 0;
+}
+
+.gc-more-dropdown :hover{
+   color: #ff4d00;
+}
+.gc-more-dropdown a {
+    padding: 10px 15px;
+    color: #000;
+    text-decoration: none;
+}
+
+.gc-more-dropdown a:hover {
+    background: #f5f5f5;
+}
+
+/* WISHLIST */
+.gc-nav-wishlist {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* HAMBURGER DROPDOWN PANEL */
+.gc-hamburger-dropdown {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    width: 260px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.gc-hamburger-dropdown a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.gc-hamburger-dropdown a:hover {
+    color: #ff4d00;
+}
+
+.gc-hamburger-dropdown hr {
+    border: none;
+    border-top: 1px solid #e5e5e5;
+}
+
+.gc-less-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* MOBILE — SAME DESIGN */
+@media (max-width: 768px) {
+    .gc-nav-links {
+        display: none;
+    }
+}
