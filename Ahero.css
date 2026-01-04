@@ -1,0 +1,58 @@
+.features-container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.feature-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    border-right: 1px solid #e0e0e0;
+}
+
+/* Remove border from the last item */
+.feature-item:last-child {
+    border-right: none;
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    color: #ff5e14; /* The signature orange */
+    margin-right: 15px;
+}
+
+.text-box h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Specific style for the first heading if you want it orange */
+.text-box h3.highlight {
+    color: #ff5e14;
+}
+
+.text-box p {
+    margin: 5px 0 0 0;
+    font-size: 0.9rem;
+    color: #777;
+    font-style: italic;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column;
+    }
+    .feature-item {
+        border-right: none;
+        border-bottom: 1px solid #e0e0e0;
+    }
+}

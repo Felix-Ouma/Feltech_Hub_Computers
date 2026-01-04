@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./Style.css">
     <link rel="stylesheet" href="./Nav.css">
     <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./Ahero.css">
 </head>
 <body>
     <section>
@@ -164,11 +165,187 @@
         </div>
 
     </section>
+        <div class="features-container">
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="text-box">
+                    <h3 class="highlight">Fast Delivery</h3>
+                    <p>Get Products Fast To Your Doorstep</p>
+                </div>
+            </div>
 
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="fa-solid fa-percent"></i>
+                </div>
+                <div class="text-box">
+                    <h3>Big Saving Shop</h3>
+                    <p>Save big every order</p>
+                </div>
+            </div>
+
+            <div class="feature-item">
+                <div class="icon-box">
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <div class="text-box">
+                    <h3>Online Support 24/7</h3>
+                    <p>Support online 24 hours a day</p>
+                </div>
+            </div>
+        </div>
     <section>
+         <!-- Header -->
+  <div style="padding:20px; background:#fff; display:flex; justify-content:space-between; align-items:center;">
+    <h2 style="margin:0;">Best Sellers</h2>
+    <div style="font-size:16px;">
+      🛒 Cart: <span id="cartCount">0</span>
+    </div>
+  </div>
 
+  <!-- Products Container -->
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));
+    gap:20px;
+    padding:20px;
+  ">
+
+    <!-- Product Card -->
+    <div style="background:#fff; padding:15px; border-radius:8px;">
+      <img src="https://i.pinimg.com/1200x/fe/f7/b3/fef7b3cbaeb59afc974ab04dd20741e6.jpg" style="width:100%; border-radius:6px;">
+      <h4>HP Series 5 27-inch Monitor</h4>
+      <p style="color:orange; font-weight:bold;">KSh 26,500 <span style="color:#777; font-size:13px;">-5%</span></p>
+      <button onclick="addToCart('HP Series 5 27-inch Monitor')" style="
+        width:100%;
+        padding:10px;
+        background:#ff6600;
+        color:#fff;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+      ">Add to Cart</button>
+    </div>
+
+    <div style="background:#fff; padding:15px; border-radius:8px;">
+      <img src="https://i.pinimg.com/1200x/77/58/e3/7758e32c2862a9857f18bd5edaa5560f.jpg" style="width:100%; border-radius:6px;">
+      <h4>Samsung 24\" S60D QHD</h4>
+      <p style="color:orange; font-weight:bold;">KSh 38,500</p>
+      <button onclick="addToCart('Samsung 24 S60D QHD')" style="width:100%; padding:10px; background:#ff6600; color:#fff; border:none; border-radius:5px;">
+        Add to Cart
+      </button>
+    </div>
+
+    <div style="background:#fff; padding:15px; border-radius:8px;">
+      <img src="https://i.pinimg.com/1200x/bd/d0/ce/bdd0ce2a9d5125a064ce9eea159ad0cb.jpg" style="width:100%; border-radius:6px;">
+      <h4>LG 29-inch WideScreen</h4>
+      <p style="color:orange; font-weight:bold;">KSh 17,999</p>
+      <button onclick="addToCart('LG 29-inch WideScreen')" style="width:100%; padding:10px; background:#ff6600; color:#fff; border:none; border-radius:5px;">
+        Add to Cart
+      </button>
+    </div>
+
+    <div style="background:#fff; padding:15px; border-radius:8px;">
+      <img src="https://i.pinimg.com/1200x/8d/54/bf/8d54bf806944d2f1fe387e69dc5ee9ee.jpg" style="width:100%; border-radius:6px;">
+      <h4>HP EliteDisplay E223</h4>
+      <p style="color:orange; font-weight:bold;">KSh 8,000</p>
+      <button onclick="addToCart('HP EliteDisplay E223')" style="width:100%; padding:10px; background:#ff6600; color:#fff; border:none; border-radius:5px;">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+  <!-- Inline JavaScript -->
+  <script>
+    let cartCount = 0;
+    let cartItems = [];
+
+    function addToCart(productName) {
+      cartCount++;
+      cartItems.push(productName);
+      document.getElementById("cartCount").innerText = cartCount;
+      alert(productName + " added to cart!");
+      console.log(cartItems);
+    }
+  </script>
     </section>
     <section>
+        <footer style="background:#1f1f1f; color:#fff; margin-top:40px;">
+
+  <!-- Main Footer -->
+  <div style="
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(220px, 1fr));
+    gap:30px;
+    padding:40px 20px;
+  ">
+
+    <!-- About -->
+    <div>
+      <h3 style="margin-bottom:15px;">Feltech Hub Computers</h3>
+      <p style="color:#ccc; line-height:1.6;">
+        Your trusted hub for laptops, desktops, monitors and computer accessories.
+        Quality products, affordable prices, and reliable support.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h3 style="margin-bottom:15px;">Quick Links</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li><a href="#" style="color:#ccc; text-decoration:none;">Home</a></li>
+        <li><a href="#" style="color:#ccc; text-decoration:none;">Shop</a></li>
+        <li><a href="#" style="color:#ccc; text-decoration:none;">About Us</a></li>
+        <li><a href="#" style="color:#ccc; text-decoration:none;">Contact Us</a></li>
+        <li><a href="#" style="color:#ccc; text-decoration:none;">Offers</a></li>
+      </ul>
+    </div>
+
+    <!-- Categories -->
+    <div>
+      <h3 style="margin-bottom:15px;">Categories</h3>
+      <ul style="list-style:none; padding:0; margin:0;">
+        <li style="color:#ccc;">Laptops</li>
+        <li style="color:#ccc;">Desktops</li>
+        <li style="color:#ccc;">Monitors</li>
+        <li style="color:#ccc;">Accessories</li>
+        <li style="color:#ccc;">Printers</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h3 style="margin-bottom:15px;">Contact Us</h3>
+      <p style="color:#ccc; margin:5px 0;">📞 0115 888 327</p>
+      <p style="color:#ccc; margin:5px 0;">📧 feltechhub@gmail.com</p>
+      <p style="color:#ccc; margin:5px 0;">📍 Kenya</p>
+
+      <!-- Social -->
+      <div style="margin-top:10px;">
+        <a href="#" style="margin-right:10px; color:#fff; text-decoration:none;">🌐</a>
+        <a href="#" style="margin-right:10px; color:#fff; text-decoration:none;">📘</a>
+        <a href="#" style="margin-right:10px; color:#fff; text-decoration:none;">📸</a>
+        <a href="#" style="color:#fff; text-decoration:none;">🐦</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bottom Bar -->
+  <div style="
+    background:#111;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+    color:#aaa;
+  ">
+    © 2026 Feltech Hub Computers. All Rights Reserved.
+  </div>
+
+</footer>
 
     </section>
     <section>
